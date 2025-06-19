@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="contact-us.css">
+</head>
+<body>
+    <div class="contact-us">
+        <div class="title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="box">
+            <div class="contact form">
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="atas">
+                        <div class="input-box">
+                            <input type="text" id="firstName" name="firstName" class="input" required>
+                            <label for="firstName">First Name</label><br><br>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="text" id="lastName" name="lastName" class="input" required>
+                            <label for="lastName">Last Name</label><br><br>
+                        </div>
+                    </div>
+            
+                    <div class="tengah">
+
+                        <div class="input-box"> 
+                            <input type="email" id="email" name="email" class="input" required>
+                            <label for="email">Email Address</label><br><br>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="text" id="phone" name="phone" class="input" required>
+                            <label for="phone">Phone Number</label><br><br>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="bawah">
+                        <div class="input-box-message">
+                            <textarea name="" id="message" class="input" required></textarea>
+                            <label for="message">Message</label>                        
+                        </div>
+                    </div>
+            
+                    <input type="submit" class="btn"></input>
+                </form>
+            </div>
+            
+            <div class="contact info">
+                <h1>Contact Info</h1>
+                <div class="address kontak">
+                    <span class="img"><img src="map-pin.svg" alt=""></span>
+                    <p class="desc">Street U No 20</p>
+                </div>
+                <div class="email kontak">
+                    <span class="img"><img src="mail.svg" alt=""></span>
+                    <a href="mailto:yimei.winata@binus.ac.id" class="desc">yimei.winata@binus.ac.id</a>
+                </div>
+                <div class="phone kontak">
+                    <span class="img"><img src="phone.svg" alt=""></span>
+                    <a href="tel:+6281234567890" class="desc">+6281 2345 67890</a>
+                </div>
+                <div class="medsos">
+                    <a href="https://web.facebook.com/yimei.winata.9/?locale=id_ID"><img src="facebook.svg" alt=""></a>
+                    <a href="https://www.instagram.com/wiinnaattaa_/"><img src="instagram.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/yimei-winata-1b9416256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><img src="linkedin.svg" alt=""></a>
+                    <a href="https://x.com/meii89046?s=09"><img src="twitter.svg" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCyxcqAkO_wklAS8zL83NbtQ"><img src="youtube.svg" alt=""></a>
+                </div>
+            </div>
+    
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4685024727432!2d106.77967440906275!3d-6.201758493760059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcc7d2c4ad%3A0x209cb1eef39be168!2sUniversitas%20Bina%20Nusantara%20Kampus%20Anggrek!5e0!3m2!1sid!2sid!4v1718305369079!5m2!1sid!2sid"></iframe>
+            </div>
+        </div>
+    
+    </div>
+    
+</body>
+<script src="contact-us.js"></script>
+</html>

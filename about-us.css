@@ -1,0 +1,153 @@
+body{
+    background: #FFFBEB;
+}
+
+.header-navbar{
+    top: 0;
+    position: sticky;
+    border-bottom: 2px solid black;
+    background-color: #263159;
+    z-index: 1000;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar p{
+    padding: 0% 5% 0% 0%;
+}
+
+.navbar p a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar p a:hover{
+    background-color: #FFFBEB;
+    color: #263159;
+    transform: .3s ease;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+
+.about-atas{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 10px;
+}
+
+.about-atas .gambar-1{
+    width: 600px;
+    height: 100%;
+    margin: 0 30px;
+}
+
+.about-atas p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #263159;
+}
+
+
+footer{
+    background-color: #263159;
+}
+
+footer .footer-atas{
+    display: flex;
+    margin: 5% 0% 0% 6%;
+}
+
+footer .footer-atas .atas-kanan{
+    display: flex;
+    margin: 0.7% 0% 0% 10%;
+}
+
+footer .footer-atas .atas-kanan p{
+    padding: 0px 35px 0px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+footer .footer-atas .atas-kanan p:hover{
+    color: #FFFBEB;
+    transform: .3s ease;
+}
+
+footer .atas-kiri-medsos{
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-atas .atas-kiri h1 a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .atas-kiri-medsos a{
+    padding: 3% 5% 3% 0%;
+}
+
+footer .atas-kiri-medsos a img{
+    width: 40px;
+    height: 40px;
+    filter: invert(100%) sepia(0%) saturate(10000%) hue-rotate(240deg);
+}
+
+
+footer .atas-kiri-medsos a img:hover{
+    /* filter: invert(94%) sepia(23%) saturate(452%) hue-rotate(295deg) brightness(104%) contrast(101%); */
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(0deg);
+}
+
+footer .footer-bawah .bawah-1{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+footer .footer-bawah .bawah-1 p{
+    padding: 0px 20px 0px 0px;
+    color: white;
+}
+
+footer .footer-bawah .bawah-1 p:hover{
+    color: #FFFBEB;
+    transform: .3s ease;
+    cursor: pointer;
+}
+
+footer .footer-bawah .bawah-2{
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-bawah .bawah-2 p{
+    color: white;
+}

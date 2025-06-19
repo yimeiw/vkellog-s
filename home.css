@@ -1,0 +1,477 @@
+body{
+    background-color: #FFFBEB;
+}
+
+.header-navbar{
+    top: 0;
+    position: sticky;
+    border-bottom: 2px solid black;
+    background-color: #263159;
+    z-index: 1000;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar p{
+    padding: 0% 5% 0% 0%;
+}
+
+.navbar p a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar p a:hover{
+    background-color: #FFFBEB;
+    color: #263159;
+    transform: .3s ease;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.best-products{
+    display: flex;
+    
+}
+
+.best-products .container-products{
+    width: 390px;
+    height: 320px;
+    border-radius: 30px 30px 30px 30px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.best-products .container-products .inner-img{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.best-products .container-products:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.best-products .container-products:hover p{
+    font-weight: bold;
+}
+
+.best-products .container-products img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 30px 0px 0px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.best-products .container-products img#img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.best-products .container-products:hover img#img2{
+    opacity: 1;
+}
+
+.best-products .container-products p{
+    padding: 5px 0px 0px 30px;
+}
+
+.container-tab{
+    background-color: #FFFBEB;
+    width: 98%;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 100px;
+}
+
+.button{
+    display: flex;
+    background-color: #495579;
+    border-radius: 50px;
+    color: #FFFBEB;
+}
+
+.button1{
+    color: #FFFBEB;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 50px 50px 50px 50px;
+    outline: 0;
+    background-color: #495579;
+    transform: scale(0.8);
+    transition: transform .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.button1.active{
+    transform: scale(1.0);
+    background-color: #263159;
+    color: #FFFBEB;
+}
+
+.inner-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    position: absolute;
+    width: 100%;
+}
+
+.inner-content.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer{
+    background-color: #263159;
+}
+
+footer .footer-atas{
+    display: flex;
+    margin: 5% 0% 0% 6%;
+}
+
+footer .footer-atas .atas-kanan{
+    display: flex;
+    margin: 0.7% 0% 0% 10%;
+}
+
+footer .footer-atas .atas-kanan p{
+    padding: 0px 35px 0px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+footer .footer-atas .atas-kanan p:hover{
+    color: #FFFBEB;
+    transform: .3s ease;
+}
+
+footer .atas-kiri-medsos{
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-atas .atas-kiri h1 a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .atas-kiri-medsos a{
+    width: 40px;
+    height: 40px;
+    padding: 3% 5% 3% 0%;
+    filter: invert(100%) sepia(0%) saturate(10000%) hue-rotate(240deg);
+}
+
+footer .atas-kiri-medsos a img:hover{
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(0deg);
+}
+
+footer .footer-bawah .bawah-1{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+footer .footer-bawah .bawah-1 p{
+    padding: 0px 20px 0px 0px;
+    color: white;
+}
+
+footer .footer-bawah .bawah-1 p:hover{
+    color: #FFFBEB;
+    transform: .3s ease;
+    cursor: pointer;
+}
+
+footer .footer-bawah .bawah-2{
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-bawah .bawah-2 p{
+    color: white;
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: #FFFBEB;
+    }
+    
+    .header-navbar{
+        top: 0;
+        position: sticky;
+        border-bottom: 2px solid black;
+        background-color: #263159;
+        z-index: 1000;
+    }
+    
+    .header-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header-logo h1 a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navbar p{
+        padding: 0% 5% 0% 0%;
+    }
+    
+    .navbar p a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navbar p a:hover{
+        background-color: #FFFBEB;
+        color: #263159;
+        transform: .3s ease;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .best-products{
+        display: flex;
+        
+    }
+    
+    .best-products .container-products{
+        width: 260px;
+        height: 270px;
+        border-radius: 30px 30px 30px 30px;
+        background-color: white;
+        margin: 10px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .best-products .container-products .inner-img{
+        position: relative;
+        width: 100%;
+        height: 200px;
+    }
+    
+    .best-products .container-products:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+    
+    .best-products .container-products:hover p{
+        font-weight: bold;
+    }
+    
+    .best-products .container-products img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px 30px 0px 0px;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .best-products .container-products img#img2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    
+    .best-products .container-products:hover img#img2{
+        opacity: 1;
+    }
+    
+    .best-products .container-products p{
+        padding: 5px 0px 0px 30px;
+    }
+    
+    .container-tab{
+        background-color: #FFFBEB;
+        width: 98%;
+        height: auto;
+        border-radius: 50px;
+        margin-bottom: 100px;
+    }
+    
+    .button{
+        display: flex;
+        background-color: #495579;
+        border-radius: 50px;
+        color: #FFFBEB;
+    }
+    
+    .button1{
+        color: #FFFBEB;
+        width: 100%;
+        height: 50px;
+        border: 0;
+        border-radius: 50px 50px 50px 50px;
+        outline: 0;
+        background-color: #495579;
+        transform: scale(0.8);
+        transition: transform .3s ease-in-out, background-color .3s ease-in-out;
+    }
+    
+    .button1.active{
+        transform: scale(1.0);
+        background-color: #263159;
+        color: #FFFBEB;
+    }
+    
+    .inner-content {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .inner-content.active {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    footer{
+        background-color: #263159;
+        width: 100%;
+    }
+    
+    footer .footer-atas{
+        display: flex;
+        margin: 5% 0% 0% 6%;
+    }
+    
+    footer .footer-atas .atas-kanan{
+        display: flex;
+        margin: 0.7% 1% 0% 0%;
+    }
+    
+    footer .footer-atas .atas-kanan p{
+        padding: 15px 20px 0px 30px;
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+    
+    footer .footer-atas .atas-kanan p:hover{
+        color: #FFFBEB;
+        transform: .3s ease;
+    }
+    
+    footer .atas-kiri-medsos{
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .footer-atas .atas-kiri h1 a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    footer .atas-kiri-medsos a{
+        width: 40px;
+        height: 40px;
+        padding: 3% 5% 3% 0%;
+        filter: invert(100%) sepia(0%) saturate(10000%) hue-rotate(240deg);
+    }
+    
+    footer .atas-kiri-medsos a img:hover{
+        filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(0deg);
+    }
+    
+    footer .footer-bawah .bawah-1{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+    
+    footer .footer-bawah .bawah-1 p{
+        padding: 0px 20px 0px 0px;
+        color: white;
+    }
+    
+    footer .footer-bawah .bawah-1 p:hover{
+        color: #FFFBEB;
+        transform: .3s ease;
+        cursor: pointer;
+    }
+    
+    footer .footer-bawah .bawah-2{
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .footer-bawah .bawah-2 p{
+        color: white;
+    }
+}
